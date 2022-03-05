@@ -1,0 +1,115 @@
+.search {
+    width: 100%;
+    padding: 3rem 0;
+}
+
+.search .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    padding: 0 1rem;
+}
+
+.search-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .box {
+    display: flex;
+    max-width: 310px;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo {
+    width: 100%;
+    margin: .4rem 0;
+    margin-bottom: 4rem;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.promo h4 {
+    font-size: 1.6rem;
+    /* color: var(--primary-dark); */
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+}
+
+.promo .timer {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.promo .offers {
+    background: #333;
+    color: #f5f5f5;
+    padding: .4rem 0;
+}
+
+.search form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrap {
+    margin: .4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.search input, select {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.search .date {
+    display: flex;
+}
+
+.search button {
+    margin: .4rem;
+}
+
+.gold-img{
+    margin-right: 1rem;
+    border-radius: 50%;
+    width: 120px;
+}
+
+@media screen and (max-width: 940px) {
+    .search .container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .search .right {
+        max-width: 100%;
+    }
+
+    .search form {
+        width: 100%;
+    }
+
+    .search .date {
+        flex-direction: column;
+    }
+}

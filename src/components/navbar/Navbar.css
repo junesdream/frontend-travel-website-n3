@@ -1,0 +1,132 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    z-index: 2;
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+}
+
+.logo{
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2a, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d5ff, #0af, #0080ff, #05f, #002aff, #00f, #2b00ff, #50f, #8000ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    -webkit-animation: animatedBackground_a 5s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #0000;
+    background-clip: text;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+@keyframes animatedBackground_a {
+    0% { background-position: 0 0 }
+    100% { background-position: -500px 0 }
+}
+
+/* .navbar-bg {
+    background-color: #f5f5f5;
+} */
+
+.nav-menu {
+    display: flex;
+    cursor: pointer;
+}
+
+li {
+    padding: 0 1rem;
+}
+
+.hamburger {
+    display: none;
+    /* padding: 1rem; */
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 940px) {
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        top: -100vh;
+        left: 0;
+        position: absolute;
+        justify-content: space-between;
+        /* align-items: center; */  
+        /* color: rgba(255, 255, 255, .95); */
+        /* background-color: #f5f5f5; */
+        background-color: #fff;
+        opacity: .8;
+        /* background: rgba(0, 0, 0, .4); */
+        transition: 0.3s;
+        /* color: #000; */
+        color: #757575;
+    }
+
+    .dark {
+        color: #000;
+    }
+
+    .active {
+        top: 80px;
+    }
+
+    .mobile-menu li {
+        padding: 1.2rem 1rem;
+        margin: 0 1rem;
+        border-bottom: 1px solid lime;
+    }
+
+    .mobile-nav {
+        margin: 1rem 0;
+    }
+
+    .mobile-menu-bottom {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: space-around;
+        margin: 2rem 0;
+    }
+
+    .social-icons .icon:hover {
+        transform: scale(1.5);
+        transition: 0.3s;
+    }
+
+    .mobile-menu button {
+        margin: 1rem;
+        width: 90%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+}
